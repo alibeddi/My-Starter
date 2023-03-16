@@ -1,35 +1,43 @@
 .not__found__container {
-  > svg {
-    max-width: 100%;
+  >svg {
+    width: 25rem;
   }
+
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  padding: 35px 20px;
+
+
   @media only screen and (max-width: 860px) {
     justify-content: center;
-    margin-top: 80px;
+
     padding-top: 0;
   }
-  & > p {
+
+  &>p {
     font-weight: 300;
     font-size: 25px;
     line-height: 38px;
     text-align: center;
     color: #aeaeae;
+    margin-bottom: 0px !important;
+
     @media only screen and (max-width: 730px) {
       font-size: 20px;
       line-height: 28px;
     }
+
     @media only screen and (max-width: 560px) {
       font-size: 15px;
     }
+
     @media only screen and (max-width: 400px) {
       font-size: 13px;
     }
   }
-  & > a {
+
+  &>a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,16 +51,18 @@
     max-width: 321px;
     width: 100%;
     padding: 10px 10px;
-    margin-top: 20px;
     cursor: pointer;
+
     &:hover {
       background-color: #30c1d9;
       color: white;
       transition: all 0.3s;
     }
+
     @media only screen and (max-width: 560px) {
       font-size: 15px;
     }
+
     @media only screen and (max-width: 400px) {
       font-size: 13px;
       margin-top: 10px;

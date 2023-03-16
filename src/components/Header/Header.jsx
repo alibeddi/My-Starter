@@ -1,5 +1,5 @@
 import MenuHeader from "../Menu";
-import HamburgerMenuTrigger from "../HamburgerMenuTrigger";
+import HamburgerMenu from "../HamburgerMenu";
 import useWindowSize from "../../hooks/useWindowSize";
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
           </div>
         )}
         <div className="header__group">
-          <HamburgerMenuTrigger />
+          <HamburgerMenu />
           {width < 1090 && "logo"}
           {/* <Notifications /> */}
           {/* <PointsWidget /> */}
