@@ -20,7 +20,7 @@ const AuthProvider = ({ children }) => {
     // const currentTime = Date.now() / 1000;
 
     return true;
-    // return decoded.exp > currentTime;
+
   };
 
   useEffect(() => {
