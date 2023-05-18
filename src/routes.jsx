@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ModalsProvider from "./components/ModalsProvider";
 import MainLayout from "./layouts/MainLayout";
 import Progress from "./components/Progress/Progress";
-import NotFoundView from "./components/NotFound";
+import NotFound from "./components/Notfound/NotFound";
 
 import { lazy } from "react";
 import { Suspense } from "react";
@@ -21,7 +21,7 @@ const RoutesProvider = () => {
                         <Route path="about" element={<AboutView />} />
                     </Route>
                     {/* Uncreated Routes */}
-                    <Route path="*" element={<NotFoundView />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Suspense>
             <ModalsProvider />
