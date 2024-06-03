@@ -6,16 +6,16 @@ import Backdrop from "../../components/Backdrop";
 
 const MainLayout = () => {
   return (
-    // <AuthGuard>
-    <div className="main_layout">
-      <Sidebar />
-      <div className="main_layout__container">
-        <Header />
-        <Outlet />
+    <AuthGuard>
+      <div className="main_layout">
+        <Sidebar />
+        <div className="main_layout__container">
+          <Header />
+          <Outlet />
+        </div>
+        <Backdrop />
       </div>
-      <Backdrop />
-    </div>
-    // </AuthGuard>
+    </AuthGuard>
   );
 };
 

@@ -1,0 +1,27 @@
+@use "../../assets/styles" as *;
+
+.btn_submit {
+  // margin-top: 44px;
+  width: 100%;
+  height: 56px;
+  border-radius: 13px;
+  border: none;
+  background-color: $blue_green;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.h_42 {
+    height: 42px;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $darck_green;
+    color: #fff;
+    cursor: pointer;
+  }
+}
