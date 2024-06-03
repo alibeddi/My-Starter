@@ -1,0 +1,49 @@
+@use "../../../../assets/styles" as *;
+
+.nav_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue_green;
+  border-radius: 46px;
+  height: 51px;
+  padding: 5px;
+  gap: 5px;
+  button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 50%;
+    border-radius: 46px;
+    height: 41px;
+    border: none;
+    background-color: $blue_green;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    &:focus {
+      background-color: $darck_green;
+      color: #fff;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 50%;
+    border-radius: 46px;
+    height: 41px;
+    border: none;
+    background-color: $blue_green;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .clicked {
+    background-color: $darck_green;
+    color: $white;
+  }
+}

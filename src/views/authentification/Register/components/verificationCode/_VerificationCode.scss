@@ -1,0 +1,16 @@
+.verif_card {
+  .error_msg {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    color: red;
+    margin-bottom: 15px;
+    margin-top: -15px;
+  }
+  .circlar_progress {
+    margin-bottom: 10px;
+    .MuiCircularProgress-svg {
+      color: #40c1d9 !important;
+    }
+  }
+}

@@ -1,0 +1,205 @@
+@use "../../../../../assets/styles" as *;
+
+.modal_auth {
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm {
+    border-radius: 20px;
+  }
+  .modal_auth_content {
+    padding: 20px 50px 40px 50px;
+    border-radius: 20px;
+    .close_modal {
+      display: flex;
+      justify-content: space-between;
+    }
+    .modal_logo {
+      text-align: center;
+    }
+    .verif_header {
+      text-align: center;
+      p {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #000000;
+      }
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #78787a;
+      }
+    }
+    .error_msg {
+      margin-top: -30px;
+      font-size: 15px;
+      font-weight: 500;
+      color: red;
+      margin-bottom: 10px;
+    }
+    .circlar_progress {
+      margin-top: -30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      .MuiCircularProgress-svg {
+        color: #40c1d9 !important;
+      }
+    }
+  }
+}
+
+.sub_card {
+  margin-top: 13px !important;
+  margin-bottom: 44px;
+  button {
+    cursor: pointer;
+    display: flex;
+    // justify-content: center;
+    gap: 10px;
+    align-items: center;
+    height: 95px;
+    width: 100%;
+    align-items: center;
+    border-radius: 19px;
+    border: 1px solid #dadada;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 25px;
+    background-color: #fff;
+    margin-bottom: 6px;
+    &:focus {
+      color: #fff;
+      background-color: $meduim_purple;
+    }
+  }
+}
+
+//email varification
+.verif_card {
+  width: 100%;
+  p {
+    color: $meduim_purple;
+    margin-top: 20px;
+  }
+  .form_verif_email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 26px;
+    margin-bottom: 33px;
+    .styles_react-code-input-container__tpiKG {
+      width: 100% !important;
+      input {
+        border-left: 1px solid #dadada;
+      }
+    }
+    .styles_react-code-input__CRulA > input:last-child {
+      border: 1px solid #dadada;
+      input {
+        border-left: 1px solid #dadada;
+      }
+    }
+    .styles_react-code-input__CRulA > input:focus + input {
+      border: 1px solid #dadada;
+    }
+
+    .styles_react-code-input__CRulA {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+
+      input {
+        border-radius: 12px !important;
+        width: 60px !important;
+        height: 60px !important;
+        border: 1px solid #dadada;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .verif_card {
+    .form_verif_email {
+      .styles_react-code-input__CRulA {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        input {
+          width: 38px !important;
+          height: 38px !important;
+          border: 1px solid #dadada;
+        }
+      }
+    }
+  }
+  .modal_auth {
+    .modal_auth_content {
+      .verif_header {
+        p {
+          font-weight: 500;
+          font-size: 20px;
+        }
+        span {
+          font-weight: 350;
+          font-size: 13px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+
+  .sub_card {
+    button {
+      font-size: 15px;
+      padding-left: 20px;
+    }
+  }
+  // .verif_card {
+  //   .reactCodeInput {
+  //     width: 40px !important;
+  //     height: 40px !important;
+  //   }
+  // }
+}
+
+// galaxy fold
+@media screen and (max-width: 300px) {
+  .verif_card {
+    .form_verif_email {
+      .styles_react-code-input__CRulA {
+        input {
+          width: 30px !important;
+          height: 30px !important;
+          border: 1px solid #dadada;
+        }
+      }
+    }
+  }
+  .modal_auth {
+    .modal_auth_content {
+      .verif_header {
+        p {
+          font-weight: 500;
+          font-size: 10px;
+        }
+        span {
+          font-weight: 350;
+          font-size: 13px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+
+  .sub_card {
+    button {
+      font-size: 15px;
+      padding-left: 20px;
+    }
+  }
+}
