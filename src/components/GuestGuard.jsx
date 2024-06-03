@@ -1,14 +1,14 @@
 import { Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-const AuthGuard = ({ children }) => {
+const GuestGuard = ({ children }) => {
   const { isAuthenticated } = useSelector((state) => state.auth);
 
-  if (!isAuthenticated) {
-    return <Navigate to="/auth/login" />;
+  if (isAuthenticated) {
+    return <Navigate to="/" />;
   }
 
   return <>{children}</>;
 };
 
-export default AuthGuard;
+export default GuestGuard;

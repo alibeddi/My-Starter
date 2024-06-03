@@ -1,0 +1,11 @@
+@use "./components/verificationModal";
+@use "./components/verificationCode";
+select {
+  width: 100%;
+  margin-top: 13px;
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  padding: 15px 18px 15px 18px;
+  align-items: center;
+}
